@@ -1,6 +1,6 @@
 
 import TopCards from "@/components/TopCards/page"
-import BarChart from "@/components/BarChart/page"
+import BarChart from "@/components/Barchart/page"
 import RecentOrders from "@/components/RecentOrders/page"
 
 export default function Home() {

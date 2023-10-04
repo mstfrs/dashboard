@@ -1,6 +1,9 @@
+import SideMenu from '@/components/SideMenu/page'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import AppHeader from '@/components/AppHeader/page'
+import AppFooter from '@/components/AppFooter/page'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      
+      <body className={inter.className}>
+        <AppHeader/>
+      <SideMenu/>
+        {children}
+        <AppFooter/>
+        </body>
     </html>
   )
 }
